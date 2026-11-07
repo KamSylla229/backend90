@@ -1,1 +1,1 @@
-Il s"afit d'un challenge .Le butr est de devenu bon dev Backend en 90 jours. Enn partant de 0 à Hero
+Il s'agit  d'un challenge où je me suis donné 90 jours pour devenir en dev Backend. l'objectif est devenir un tres bon dev qui comprends bien les bases en partant du web jusqu'au developpement. Le lagngage choisi c'est Python avec Django
