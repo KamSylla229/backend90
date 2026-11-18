@@ -4,8 +4,6 @@ def sauvegarder_taches(taches, chemin):
     with open(chemin, "w", encoding="utf-8") as fichier:
         json.dump(taches, fichier)
 
-# # Essai (à supprimer après)
-# sauvegarder_taches([{"id": 1, "titre": "Lire", "fait": False}], "test.json")
 
 
 def charger_taches(chemin):
@@ -15,6 +13,3 @@ def charger_taches(chemin):
     except FileNotFoundError:
         return []
 
-# Essais (à supprimer après)
-print(charger_taches("test.json"))
-print(charger_taches("absent.json"))

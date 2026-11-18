@@ -12,4 +12,10 @@ assert charger_taches("absent.json") == []
 sauvegarder_taches([], "test.json")
 assert charger_taches("test.json") == []
 
+#Test 4: 
+lire_coder = [{ "id": 2, "titre": "Lire", "fait": False},
+               {"id": 3, "titre": "coder", "fait": True}]
+sauvegarder_taches(lire_coder, "test.json")
+assert charger_taches("test.json") == lire_coder
+
 print("Tous les tests de stockage passent !")
