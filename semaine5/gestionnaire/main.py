@@ -10,10 +10,17 @@ while True :
 
     choix = input("entrer votre choix : " ).strip()
     if choix == "1" :
+        avant = len(taches)
         nouvelle_tache=input("entrer la nouvelle tâche :")
         taches = ajouter_tache(taches, nouvelle_tache)
-        sauvegarder_taches(taches, "taches.json")
-        print("Tâche ajoutée")
+        apres = len(taches)
+        if apres > avant:
+            sauvegarder_taches(taches, "taches.json")
+            print("Tâche ajoutée")
+        else :
+            print("Titre vide, rien n'a été ajouté")
+
+        
 
     elif choix == "2" :
         if len(taches) == 0:
